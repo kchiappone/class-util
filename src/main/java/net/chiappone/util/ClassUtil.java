@@ -7,7 +7,6 @@ import java.util.Set;
 
 /**
  * @author Kurtis Chiappone
- * @date 10/9/2016
  */
 public class ClassUtil {
 
@@ -40,8 +39,8 @@ public class ClassUtil {
     /**
      * Returns the class name from the fully-qualified name.
      *
-     * @param fullyQualifiedName
-     * @return String
+     * @param fullyQualifiedName the fully-qualified class name
+     * @return String class name
      */
     public static String getClassName( String fullyQualifiedName ) {
 
@@ -52,9 +51,9 @@ public class ClassUtil {
     /**
      * Returns the fully-qualified class name taken from a file and package.
      *
-     * @param javaFile
-     * @param packageName
-     * @return String
+     * @param javaFile    the Java file
+     * @param packageName the package name
+     * @return String fully-qualified name
      */
     public static String getFullyQualifiedName( File javaFile, String packageName ) {
 
@@ -67,8 +66,8 @@ public class ClassUtil {
      * Extracts a parameterization. Returns null if the passed in String does
      * not contain a parameterization.
      *
-     * @param parameterizedClass
-     * @return String
+     * @param parameterizedClass the parameterized class
+     * @return String the parameterization
      */
     public static String extractParameterization( String parameterizedClass ) {
 
@@ -84,8 +83,8 @@ public class ClassUtil {
      * Determines if the passed in String representation of a class is a
      * Collection type.
      *
-     * @param clazz
-     * @return boolean
+     * @param clazz the class name
+     * @return boolean true if a Collection type
      */
     public static boolean isCollection( String clazz ) {
 
@@ -105,8 +104,8 @@ public class ClassUtil {
      * Determines if the passed in String representation of a class is
      * parameterized.
      *
-     * @param clazz
-     * @return boolean
+     * @param clazz the class name
+     * @return boolean true if parameterized
      */
     public static boolean isParameterized( String clazz ) {
 
@@ -118,8 +117,8 @@ public class ClassUtil {
      * Determines if the passed in String representation of a class is a
      * primitive type or a primitive type wrapper.
      *
-     * @param clazz
-     * @return boolean
+     * @param clazz the class name
+     * @return boolean true if primitive
      */
     public static boolean isPrimitiveType( String clazz ) {
 
@@ -137,8 +136,8 @@ public class ClassUtil {
      * Removes the parameterized type from the given String representation of a
      * class.
      *
-     * @param clazz
-     * @return String
+     * @param clazz the class name
+     * @return String the class name without a parameterization
      */
     public static String removeParameterization( String clazz ) {
 
